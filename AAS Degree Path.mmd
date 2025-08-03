@@ -1,0 +1,58 @@
+---
+id: d159455b-ad6c-41c4-9b76-30abdc0182eb
+---
+graph TD
+    subgraph Overall Progress
+        direction TB
+        A[START] --> B{CURRENT STATUS};
+        B --> C{PRIMARY GOAL: AAS in IT};
+    end
+
+-.->        direction TB
+        C --> D{AAS DEGREE REQUIREMENTS?};
+        D -- NO --> E[PLAN REMAINING COURSES];
+        D -- YES --> F{GPA >= 2.0};
+        F -- NO --> G[IMPROVE GPA];
+        F -- YES --> H{>= 20 MCTC Credits?};
+        H -- NO --> I[ENROLL IN MORE MCTC COURSES];
+        H -- YES --> J{15 MnTC Credits (3 Goals or More)?};
+        J -- NO --> K[ENROLL IN MnTC COURSES];
+        J -- YES --> L{>= 30 IT Credits?};
+        L -- NO --> M[ENROLL IN MORE ITEC COURSES];
+        L -- YES --> N{TOTAL 60 or More Credits?};
+        N -- NO --> O[ENROLL IN MORE COURSES];
+        N -- YES --> P[SUBMIT GRADUATION APPLICATION];
+        P --> Q[AAS DEGREE EARNED];
+    end
+
+    subgraph Potential Intermediate Awards
+        direction LR
+        Q --> AA[Consider Intermediate Awards];
+        AA --> BB{Certificate Eligible?};
+        BB -- YES --> CC[EARN CERTIFICATE];
+        BB -- NO --> DD[Diploma Eligible?];
+        DD -- YES --> EE[EARN DIPLOMA];
+    end
+
+    subgraph Bachelor's Degree Path
+        direction TB
+        Q --> FF{SECONDARY GOAL: BS at Metro State?};
+        FF -- YES --> GG[TRANSFER AAS CREDITS TO METRO STATE];
+        GG --> HH[COMPLETE METRO STATE BS REQUIREMENTS];
+        HH --> II[BS DEGREE EARNED];
+        FF -- NO --> JJ[EXPLORE OTHER OPTIONS];
+    end
+
+    subgraph End
+        direction TB
+        E --> P;
+        G --> P;
+        I --> P;
+        K --> P;
+        M --> P;
+        O --> P;
+        CC --> JJ;
+        EE --> JJ;
+        II --> JJ;
+        JJ --> KK[END];
+    end

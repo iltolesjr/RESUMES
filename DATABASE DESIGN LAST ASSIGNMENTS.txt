@@ -1,0 +1,440 @@
+ Due April 15 at 9:00 PM
+  Starts Apr 15, 2025 6:00 PMEnds Apr 15, 2025 9:00 PM
+Database Project-Entity-Relationship Diagram (ERD) - Final Draft - Due6:00 PM
+How to Create Your Entity-Relationship Diagram (ERD)
+Draw a rough draft of an Entity-Relationship Diagram that shows the database you plan to develop for your project. 
+
+Include the ERD elements from the checklist on this page.
+
+Use Draw.io (diagrams.net) or any diagramming tool you're comfortable with to create your ERD.
+
+Share the rough draft of your ERD with your classmates Entity-Relationship Diagram Review session in class. 
+You don't need to turn in the rough draft of your ERD. Just bring it to class to share.
+
+ Use the feedback from your classmates to finalize your ERD.
+
+When finished, export the final version of your ERD as a PDF and upload it to this assignment page. 
+ERD Review Process
+
+
+ERD Requirements Checklist
+Required Elements
+☐ Identify at least 5 entities (tables) for your database
+☐ List attributes (columns) for each entity with their data types
+☐ Mark primary keys (PK) and foreign keys (FK) clearly
+☐ Draw relationships between entities (1:1, 1:M, M:M)
+☐ Verify your design follows Second Normal Form (2NF)
+☐ Include proper relationship notation (crow's foot)
+☐ Add cardinality constraints to each relationship
+Common ERD Symbols
+Cardinality Notation
+Crows Foot Notation Symbols
+Getting Help with Your ERD
+🧙🏾‍♂️Review the Knowledge Quests:
+ Entity Relationship Diagrams
+Normalization
+📖Check out these chapters from Oracle Academy:
+Chapter 2-3 - Database Design - ERDs
+Chapter 6_2 - Database Design & Normalization
+⬆️Open the Module 9 Lab for instructions on how to use Draw.io to make an ERD.
+👩🏼‍🏫Ask your instructor and classmates questions! We're here to help. 😊
+Database Project-Entity-Relationship Diagram (ERD) - Final DraftDatabase Project-Entity-Relationship Diagram (ERD) - Final Draft
+ Due April 22 at 6:00 PM
+  Ends May 15, 2025 4:00 PM
+Module 13 Lab - Due6:00 PM
+Module 13 Lab:  Choose Your Own Database Adventure!Student on a database adventure
+
+Background 
+Today we'll embark on a "choose your own database" adventure! 
+
+In this lab, you will choose one of six database concepts, create the database structure, populate it with sample data, query the data, and then clean up by dropping the tables. You’ll execute these operations in Oracle APEX and submit your SQL statements. After the lab, you'll have the opportunity to share your database with your teammates. If you get stuck, don't worry - you'll have time to troubleshoot with your teammates and your instructor as well.
+
+Remember: This is a learning experience. If you encounter difficulties, view them as opportunities to deepen your understanding. If you aren't quite able to finish your database today, you can share what you have with your team and then keep working on your database. Good luck, and enjoy your database adventure!
+
+Prerequisites:
+
+Access to Oracle APEX
+Basic understanding of SQL
+
+Database Adventures to Choose From
+Pet Adoption Database
+
+A local animal shelter needs a system to manage their adoptable pets, potential adopters, and successful adoptions, ensuring each animal finds a loving home.
+Pet Adoption ERD
+
+Rock Concerts Database
+A music promotion company wants to track bands, venues, and upcoming rock concerts, helping fans find shows and managing ticket sales.
+ERD for Rock Concert Database
+Sneaker Collection Database
+Jeff, an avid sneaker collector, requires a database to catalog his growing collection, including details about each pair and their current market value. 
+ERD for Sneaker Collection Database
+Soccer Games Database
+A regional soccer league needs to manage information about teams, players, and match results for their ongoing tournament season. 
+
+ERD for Soccer Games Database
+ House Plant Care Database
+
+ A gardening enthusiast wants to track their indoor plant collection, including care instructions and maintenance logs for each plant.
+
+ERD for House Plant Care Database
+Recipes Database
+A cooking blog needs a system to organize recipes and ingredients to help visitors find and prepare delicious meals.
+ERD for Recipe Database
+
+Instructions
+Choose Your Own Database Adventure (5 minutes)
+
+Review the six database concepts and their ERDs.
+Select the one that interests you most.
+
+In a new tab, Open the Oracle APEX instance for our class.
+
+Log into your Oracle APEX workspace: 
+You can find instructions on how to access your workspace in Oracle APEX in the Module 11 Lab.
+Please make sure your log into your own workspace, which is your first initial plus your lastname. If you log into the shared Minneapolis College workspace, you may lose the tables you created because other people might be working in that workspace.
+Enter your first initial and lastname for the workspace and username.
+After you log in, click on SQL Workshop > SQL Commands.
+
+Create Tables 
+
+Based on the ERD of your chosen database, write SQL CREATE TABLE statements.
+Include appropriate primary keys, foreign keys, and data types.
+
+Insert Sample Data 
+
+Write INSERT statements to add at least 3 sample records to each table in your database.
+
+Query Data 
+
+Write SELECT statements to retrieve all records from each table.
+
+Drop Tables 
+
+Write DROP TABLE statements for each table in your database.
+
+Documentation 
+
+Add brief comments explaining each section of your SQL.
+-- This is a SQL comment: 
+
+Tips
+Refer to the ERD frequently to ensure your table structure matches the design.
+Test your SQL statements incrementally in Oracle APEX.
+If you encounter errors, read the error message carefully and try to troubleshoot.
+Ask for help if you get stuck. 💁🏽‍♀️
+How to Submit Your Lab
+Press Ctrl+A to select the SQL statements you've entered into the SQL Commands window.
+ 
+Press Ctrl+C to copy the SQL statements.
+
+Press Ctrl+V to paste the SQL statements into the textbox on this assignment page.
+
+Click the submit button to submit your assignment.
+Congratulations! You've learned how to implement a database from an ERD on your database adventure! 👏🏾👏👏🏻👏🏽
+
+Module 13 LabModule 13 Lab
+ Due April 22 at 6:00 PM
+  Ends May 15, 2025 4:00 PM
+Module 13 Teamwork & Entity-Relationship Diagram Review - Due6:00 PM
+SQL RobinModule 13 Teamwork: Database Round-Robin 🐦
+
+Introduction 
+Welcome to the database round-robin! A round-robin is like a friendly game of "pass the ball," where each person in a group gets a turn to speak or share their ideas, one after another, until everyone has had a chance to participate. In this activity, you'll showcase your database designs and implementations to your peers in a round-robin format.
+
+This exercise is helpful for database developers as it helps you see how developers encounter similar problems when creating a database. Walking through a database implementation helps solidify your understanding of how conceptual models translate into functional databases. By sharing and discussing your work, you'll gain valuable feedback, enhancing your skills as a database developer and preparing you for real-world scenarios where explaining and justifying your database choices is essential. Let's fly into our round-robin!
+
+
+Instructions
+1. Database Showcase Round-Robin (30 minutes)
+   - Open the online timer.
+   -  Ask a team member to run the timer in five-minute increments so you know when to switch to the next student.
+   - Each student takes 5 minutes to:
+     a) Present their chosen database concept and explain why they chose it.
+     b) Show their ERD and explain the relationships.
+     c) Share any challenges they faced and how they overcame them.
+     d) Highlight one aspect of their design they're particularly proud of.
+   - After each presentation, allow two minutes for questions from team members.
+
+2. Reflection Discussion (15 minutes)
+   - After the discussion, the team writes a brief reflection (2-3 sentences) on:
+     a) One new thing they learned from this teamwork activity.
+     b) How they might approach database design differently in the future based on what they've seen and discussed.
+
+How to Submit Your Teamwork
+Copy and paste your reflection paragraph into this assignment.
+Congratulations! You've completed your database round-robin. 🐦
+SQL Robin
+
+
+Module 13 Teamwork & Entity-Relationship Diagram ReviewModule 13 Teamwork & Entity-Relationship Diagram Review
+ Due April 22 at 6:00 PM
+  Ends Apr 22, 2025 6:00 PM
+Module 14 Attendance Quiz - Due9:00 PM
+Module 14 Attendance QuizModule 14 Attendance Quiz
+ Due April 22 at 9:00 PM
+  Starts Apr 22, 2025 6:00 PMEnds Apr 22, 2025 9:00 PM
+Module 14 Lab - Due12:00 PM
+Module 14 Lab:  Superhero SQL Review 🦸🏽SQL Superhero
+
+Background 
+Today we'll review some of the fundamental concepts of the Structured Query Language (SQL) to help you prepare for creating your own database in the database project. In this fun activity, we're going to create a simple database to keep track of superheroes and their missions. Imagine you're in charge of managing all the superheroes in your city. You need to know who they are, what their secret identities are, and what missions they're working on. We'll use SQL to create tables to store this information, add superhero data, and then ask questions about our heroes and their adventures. By the end, you'll be able to find out which heroes are on a mission, how powerful they are, and even change their information if needed. It's like being the behind-the-scenes helper for a whole team of superheroes!  
+
+Prerequisites:
+
+Access to Oracle APEX
+Basic understanding of SQL
+
+Log into Oracle APEX
+In a new tab, Open the Oracle APEX instance for our class.
+
+🚫Please do not go directly to the commercial Oracle APEX site. We have our own instance that is set up and administered for Minneapolis College by your instructor.
+
+Click on the Go button for Oracle APEX.
+Go button
+
+Enter your new workspace, username, and password, then check Remember Workspace and Username. Click the Sign In button.
+
+Workspace: first initial plus last name
+                         Spelled as your name appears on the D2L classlist.
+                         For example, for Mary Lebens it is mlebens.
+
+Username: first initial plus last name
+                         Spelled as your name appears on the D2L classlist.
+                         For example, for Mary Lebens it is mlebens.
+
+Password: ITEC1375database   
+                       The letters ITEC are uppercase and the letters database are lowercase.
+
+Enter your first initial and lastname for the workspace and username.
+
+
+Click on SQL Workshop.
+SQL Workshop
+
+Click on SQL Commands.
+SQL Commands
+Instructions (In-Class Activity)
+Part 1: Create Tables (10 minutes)
+
+-- Create Heroes table
+CREATE TABLE Heroes (
+    HeroID NUMBER PRIMARY KEY,
+    HeroName VARCHAR2(50),
+    SecretIdentity VARCHAR2(50),
+    PowerLevel NUMBER
+);
+
+-- Create Missions table
+CREATE TABLE Missions (
+    MissionID NUMBER PRIMARY KEY,
+    MissionName VARCHAR2(100),
+    MissionDate DATE
+);
+
+-- Create HeroMissions table to represent many-to-many relationship
+CREATE TABLE HeroMissions (
+    HeroID NUMBER,
+    MissionID NUMBER,
+    FOREIGN KEY (HeroID) REFERENCES Heroes(HeroID),
+    FOREIGN KEY (MissionID) REFERENCES Missions(MissionID),
+    PRIMARY KEY (HeroID, MissionID)
+);
+Explanation: We create three tables. Heroes and Missions are our main entities, and HeroMissions is a junction table to represent the many-to-many relationship between Heroes and Missions.
+
+Part 2: Insert Data (10 minutes)
+
+-- Insert Heroes
+INSERT INTO Heroes (HeroID, HeroName, SecretIdentity, PowerLevel)
+VALUES (1, 'Spider-Man', 'Peter Parker', 8);
+
+INSERT INTO Heroes (HeroID, HeroName, SecretIdentity, PowerLevel)
+VALUES (2, 'Iron Man', 'Tony Stark', 9);
+
+INSERT INTO Heroes (HeroID, HeroName, SecretIdentity, PowerLevel)
+VALUES (3, 'Black Widow', 'Natasha Romanoff', 7);
+
+-- Insert Missions
+INSERT INTO Missions (MissionID, MissionName, MissionDate)
+VALUES (1, 'Save New York', TO_DATE('2023-07-04', 'YYYY-MM-DD'));
+
+INSERT INTO Missions (MissionID, MissionName, MissionDate)
+VALUES (2, 'Defeat Thanos', TO_DATE('2023-08-15', 'YYYY-MM-DD'));
+
+-- Assign Heroes to Missions
+INSERT INTO HeroMissions (HeroID, MissionID) VALUES (1, 1);
+INSERT INTO HeroMissions (HeroID, MissionID) VALUES (2, 1);
+INSERT INTO HeroMissions (HeroID, MissionID) VALUES (1, 2);
+INSERT INTO HeroMissions (HeroID, MissionID) VALUES (2, 2);
+INSERT INTO HeroMissions (HeroID, MissionID) VALUES (3, 2);
+Explanation: We insert sample data into our tables, including three heroes, two missions, and assign heroes to missions.
+
+Part 3: Queries (15 minutes)
+
+-- List all heroes and their secret identities
+SELECT HeroName, SecretIdentity FROM Heroes;
+
+-- Display all heroes who went on a specific mission
+SELECT h.HeroName
+FROM Heroes h
+JOIN HeroMissions hm ON h.HeroID = hm.HeroID
+WHERE hm.MissionID = 1;
+
+-- Find heroes with a power level greater than 8
+SELECT HeroName, PowerLevel
+FROM Heroes
+WHERE PowerLevel > 8;
+
+-- List missions in order of date
+SELECT MissionName, MissionDate
+FROM Missions
+ORDER BY MissionDate;
+Explanation: These queries demonstrate basic SELECT statements, JOINs, WHERE clauses, and ORDER BY.
+
+Part 4: Data Manipulation (10 minutes)
+
+-- Update a hero's power level
+UPDATE Heroes
+SET PowerLevel = 10
+WHERE HeroName = 'Iron Man';
+
+-- Remove a hero from a mission
+DELETE FROM HeroMissions
+WHERE HeroID = 3 AND MissionID = 2;
+Explanation: These statements show how to update existing data and delete specific records.
+
+Part 5: Clean Up (5 minutes)
+
+-- Delete all tables
+DROP TABLE HeroMissions;
+DROP TABLE Heroes;
+DROP TABLE Missions;
+Explanation: We drop the tables in reverse order of creation due to foreign key constraints.
+
+Remember: With great power comes great responsibility… to write clean and efficient SQL!
+
+
+How to Submit Your Lab
+Press Ctrl+A to select the SQL statements you've entered into the SQL Commands window.
+ 
+Press Ctrl+C to copy the SQL statements.
+
+Press Ctrl+V to paste the SQL statements into this assignment.
+
+Congratulations! After this lab, you're a SQL superhero, ready to conquer your database project! 🦸🏻‍♀️🦸🏽🦸🏻‍♂️🦸🏾‍♀️
+
+Module 14 LabModule 14 Lab
+ Due April 29 at 12:00 PM
+  Ends May 15, 2025 4:00 PM
+Database Project - Database Review - Due9:00 PM
+Database Review Instructions
+Bring the rough draft of the SQL code for your database to class to share with your classmates during the database review. You don't need to turn in the rough draft.
+During the class session for the database review, we'll split into breakout rooms with a small group of students in each room.
+Review and test one of your classmates' code.
+Fill out a Database Review Worksheet for your classmate.
+If you need guidance on filling out the worksheet, check out this example: Database Review Worksheet Database Review Worksheet-Example of Completed Worksheet
+Share the Database Review Worksheet with your classmate, so they can see your feedback.
+Upload your completed database review worksheet to the Assignment Dropbox on D2L so your instructor can give you credit for participating in the database review.
+Use the feedback from your classmate to revise your database.
+Upload the final draft of your database to the Assignment Dropbox.
+Database Development Process
+
+
+Database Project - Database ReviewDatabase Project - Database Review
+ Due April 29 at 9:00 PM
+  Ends May 6, 2025 6:00 PM
+Module 15 Attendance Quiz - Due9:00 PM
+Module 15 Attendance QuizModule 15 Attendance Quiz
+ Due April 29 at 9:00 PM
+  Starts Apr 29, 2025 6:00 PMEnds Apr 29, 2025 9:00 PM
+Database Project - Database Final Draft - Due6:00 PM
+Database Instructions
+Develop your database to meet the technical requirements:
+
+Database Requirements
+Create a SQL script that creates database tables meeting these requirements:
+At least five entities (tables)
+Appropriate attributes for each entity
+Normalized to at least 2NF
+Proper relationships using primary/foreign keys
+Create a SQL script for:
+Inserting records into all tables
+Updating records in at least two tables
+Create a stored procedure with SELECT statements using:
+WHERE clause
+JOIN
+Single function
+Group function
+Conditional expression
+Create a SQL script for dropping database tables
+Bring the rough draft of the SQL code for your database to class to share with your classmates during the database review. You don't need to turn in the rough draft.
+During the class session for the database review, we'll split into breakout rooms with a small group of students in each room.
+Review and test one of your classmates' code.
+Fill out a Database Review Worksheet for your classmate.
+If you need guidance on filling out the worksheet, check out this example: Database Review Worksheet Database Review Worksheet-Example of Completed Worksheet
+Share the Database Review Worksheet with your classmate, so they can see your feedback.
+Upload your completed database review worksheet to the Assignment Dropbox on D2L so your instructor can give you credit for participating in the database review.
+Use the feedback from your classmate to revise your database.
+Upload the final draft of your database to the Assignment Dropbox.
+Database Development Process
+
+
+Database Project - Database Final DraftDatabase Project - Database Final Draft
+ Due May 6 at 6:00 PM
+  Ends May 15, 2025 4:00 PM
+Database Project - Peer Review - Due9:00 PM
+Instructions for Peer Review
+Over the course of several teamwork activities and the database project, you've worked with a small team of peers. Now is your opportunity to give feedback on this teamwork experience.
+Please complete the Peer Review Form: Peer Review Form
+Upload the completed form to the Assignment Dropbox.
+Important Note: Please make sure you turn in the peer review form on time, as it is important to your teammates' grade. Since the peer review form is critical to your teammates receiving accurate grades, if you don't turn in your peer review form on time you won't receive credit for the peer review portion of the database project.
+
+Database Project - Peer ReviewDatabase Project - Peer Review
+ Due May 6 at 9:00 PM
+  Ends May 13, 2025 6:00 PM
+Module 16 Attendance Quiz - Due9:00 PM
+Module 16 Attendance QuizModule 16 Attendance Quiz
+ Due May 6 at 9:00 PM
+  Starts May 6, 2025 6:00 PMEnds May 6, 2025 9:00 PM
+Module 17 Attendance Quiz - Due9:00 PM
+Module 17 Attendance QuizModule 17 Attendance Quiz
+ Due May 13 at 9:00 PM
+  Starts May 13, 2025 6:00 PMEnds May 13, 2025 9:00 PM
+Database Project - Retrospective - Due9:00 PM
+Instructions for Project Retrospective
+Developers
+Background
+At the end of a project, database developers reflect on what went well and what could be done differently on future projects. In the Agile methodology, this is called a "retrospective". The retrospective helps developers think about how they can improve future projects. During the retrospective, we discuss the high points, challenges, and lessons learned from this project.
+
+The retrospective is the most important part of the project, because the lessons learned will impact your success on future projects, whether in college or on the job. The goal is to showcase your hard work and reflect on this experience.
+
+Instructions for the Retrospective
+Timing: Your retrospective will be around eight to ten minutes in length.
+Format: During the class session, you'll break into a breakout room with a small team of classmates. Each student will give their retrospective, with a few minutes afterwards for questions and discussion.
+Content: Your retrospective will contain two parts:
+First half: Short overview of the project plan and database
+Second half: Reflection on the development process
+Retrospective Outline
+Part 1: Project Plan and App
+Give a brief overview of the Project Plan
+Give a short demonstration of the database, stored procedure, and SQL scripts
+Answer: Did the database development process go as planned? Why or why not?
+Part 2: Reflection
+Describe what went well on the project. What were the high points?
+Describe the challenges and issues you encountered
+Explain how you overcame the challenges
+Describe what you would do differently if you had the project to do over again
+Database Project - RetrospectiveDatabase Project - Retrospective
+ Due May 13 at 9:00 PM
+  Ends May 13, 2025 9:00 PM
+Syllabus Quiz - Availability Ends4:00 PM
+Please see the Course Schedule for the instructions and due date for this quiz.
+
+Syllabus QuizSyllabus Quiz
+ Due January 21 at 6:00 PM
+  Ends May 15, 2025 4:00 PM
+Extra Credit: Course Survey Confirmation - Due4:00 PM
+Complete the course survey - look in your Minneapolis College email for a link.
+Then complete this quiz to confirm you completed the survey.
+Extra Credit: Course Survey ConfirmationExtra Credit: Course Survey Confirmation
+ Due May 15 at 4:00 PM
+  Starts May 6, 2025 6:00 PMEnds May 15, 2025 4:00 PM

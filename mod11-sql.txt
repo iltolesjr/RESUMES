@@ -1,0 +1,267 @@
+skip to main content
+Century
+Minneapolis
+Normandale
+
+Sp25 ITEC 1460-80 SQL Server Database Design and Implementation
+
+
+
+
+Update alerts - You have new alerts
+
+Ira Toles avatar
+Ira Toles
+
+
+Materials
+
+Communications
+
+Assessments
+
+Resources
+
+Technology Help
+Media Library
+
+Training Videos
+Assignments
+ Module 11 Lab
+Module 11 Lab
+
+Hide Assignment Information
+Instructions
+Module 11 Lab: Deploying SQL Server on Linux 🐧
+Background 📚
+SQL Pizza
+This lab will guide you through deploying Microsoft SQL Server on Linux. We'll be setting up SQL Server in a GitHub Codespace using Docker. Using Docker containers provides isolation, easy cleanup, and consistent behavior across different environments.
+
+After setting up your SQL Server together in class, you'll practice creating a database for a pizza delivery system. 🍕 Let's get started!
+
+
+Pre-Requisites ✅
+You need a GitHub account. If you haven't set this up yet, please complete Module 3 Lab before starting this Lab.
+
+Part 1: In-Class Activity
+Step 1: Create a New Repo and Codespace in GitHub 🚀
+Go to https://github.com/
+
+Enter your Minneapolis College email address and your password to log in. Your Minneapolis College email address ends in @go.minneapolis.edu.
+
+Click on the + symbol on the toolbar and click New Repository in the drop-down menu.
+
+GitHub dashboard
+
+In the repository name textbox, enter Module11Lab. (Developers sometimes call their repositories "repos" for short.)
+Check the Add ReadMe option. (This is important - you can't create a Codespace on an empty repo.)
+Leave all of the default settings.
+
+Click the green Create Repository button.
+
+Now let's make a codespace so we can populate our new repo with code! Click on the Octocat icon Octocat icon in the upper left corner to open the dashboard.
+
+Click on the + symbol on the toolbar and choose New Codespace from the drop-down menu.
+New Codespace
+
+In the Create a new codespace dialog, click on Select a Repository and select Module11Lab. Then click the green Create Codespace button.
+
+GitHub will open your new codespace. Be patient - it might take a few minutes to get your codespace ready.
+
+Step 2: Pull and Run SQL Server 🐳
+Open the Terminal.
+Copy and paste this command as one line, and press enter to run it.
+This command will take a few minutes to run, as it is downloading SQL Server from Microsoft's server and installing SQL Server in your virtual environment. You'll be prompted to open this on port 1433, but ignore this message. This is a database server, not a web server, so there's nothing to display in the browser.
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=YourStrongP@ssw0rd" -e "MSSQL_PID=Developer" -p 1433:1433 --name sqlserver --health-cmd '/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "YourStrongP@ssw0rd" -Q "SELECT 1" || exit 1' --health-interval 10s --health-timeout 3s --health-retries 10 --health-start-period 10s -d mcr.microsoft.com/mssql/server:2022-latest
+Let's understand this command:
+
+Creates and starts a new container for SQL Server.
+Sets up necessary passwords and configurations..
+Maps port 1433 for database connections
+Includes health checks to ensure SQL Server is running properly.
+
+Step 3: Install SQL Server Command-Line Tools 🛠️
+Run each command one-by-one. 
+# Add Microsoft repository to your environment
+curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
+
+# Import GPG key
+# GPG (GNU Privacy Guard) is an encryption software that helps
+# secure digital communications. Microsoft, like many software
+# vendors, signs their Linux packages with a GPG key. 
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+
+# Update the package list
+sudo apt-get update
+
+# Install Microsoft SQL tools 
+# (These tools allow you to run SQL statements on your
+# SQL Server.)
+sudo ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+
+# Add the SQL tools to the PATH variable 
+echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
+source ~/.bashrc
+
+Step 4: Verify Installation 🔍
+# Test the connection
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q "SELECT @@VERSION"
+
+Step 5: Create a Test Database 📦
+# Create a new database
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q "CREATE DATABASE TestDB"
+
+# Verify the database was created
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q "SELECT name FROM sys.databases"
+
+Step 6: Managing Your SQL Server Container 🎮
+# Stop SQL Server
+docker stop sqlserver
+
+# Start SQL Server
+docker start sqlserver
+
+# View container logs
+docker logs sqlserver
+
+# Check container status
+docker ps -a
+
+Step 7: Clean Up 🧹
+When you're finished with the lab, shutdown the Docker container:
+
+# Stop the container
+docker stop sqlserver
+How to Submit Part 1 of Your Lab
+Go to https://github.com/
+
+Click on the Octocat logo in the upper left corner of the GitHub screen to go to your Dashboard.
+
+On the left side of the dashboard, click on your SQL repository name in the list of Top Repositories.
+Click on Octocat logo then click on the repository name in the list of Top Repositories
+
+Highlight the URL for your repository in the address bar of your browser.
+
+Copy and paste the URL for your GitHub repository into the textbox at the bottom of this lab and click submit.
+
+Congratulations on finishing your Module Lab. Time to celebrate! 🎉
+
+Part 2: Individual Activity
+⚠️ Important: Start Docker and SQL Server First! ⚠️
+Before proceeding with Part 2:
+
+Make sure Docker is running - if you've completed Part 1 recently and haven't closed your Codespace, it should still be running.
+If you've stopped the SQL Server container or closed your Codespace, you need to restart it using these commands:
+# Check if container exists and is stopped
+docker ps -a | grep sqlserver
+
+# If it exists but is stopped, start it:
+docker start sqlserver
+
+# If it doesn't exist, recreate it (use the command from Step 2 in Part 1)
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=YourStrongP@ssw0rd" -e "MSSQL_PID=Developer" -p 1433:1433 --name sqlserver --health-cmd '/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "YourStrongP@ssw0rd" -Q "SELECT 1" || exit 1' --health-interval 10s --health-timeout 3s --health-retries 10 --health-start-period 10s -d mcr.microsoft.com/mssql/server:2022-latest
+
+# Verify SQL Server is running
+docker ps | grep sqlserver
+
+# Test connection to ensure SQL Server is ready
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q "SELECT @@VERSION"
+Only proceed with Part 2 once you've confirmed SQL Server is running properly.
+
+Build Your Pizza Delivery Tracking System 🍕
+Let's create a database to track campus pizza deliveries! First, connect to TestDB:
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q "USE TestDB"
+Now let's create tables for our pizza delivery system:
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q " CREATE TABLE Drivers ( DriverID INT PRIMARY KEY IDENTITY(1,1), Name VARCHAR(50) NOT NULL, VehicleType VARCHAR(20), Rating DECIMAL(3,2) ); CREATE TABLE Orders ( OrderID INT PRIMARY KEY IDENTITY(1,1), CustomerName VARCHAR(50) NOT NULL, PizzaType VARCHAR(30) NOT NULL, OrderTime DATETIME DEFAULT GETDATE(), DeliveryTime DATETIME, DriverID INT FOREIGN KEY REFERENCES Drivers(DriverID), TotalAmount DECIMAL(10,2), Rating INT CHECK (Rating BETWEEN 1 AND 5) )"
+Let's add our campus delivery drivers:
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q " INSERT INTO Drivers (Name, VehicleType, Rating) VALUES ('Alex', 'Electric Scooter', 4.8), ('Abdi', 'Hybrid Car', 4.9), ('Bao', 'Bicycle', 4.7), ('Mariyama', 'Motorcycle', 4.6)"
+Add some sample pizza orders:
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q " INSERT INTO Orders (CustomerName, PizzaType, OrderTime, DeliveryTime, DriverID, TotalAmount, Rating) VALUES ('Chris', 'BBQ Chicken', '2024-01-12 18:00:00', '2024-01-12 18:30:00', 1, 18.99, 5), ('Pat', 'Pepperoni Supreme', '2024-01-12 18:15:00', '2024-01-12 18:50:00', 2, 20.99, 4), ('Taylor', 'Veggie Delight', '2024-01-12 18:30:00', '2024-01-12 19:00:00', 3, 17.99, 5), ('Jamie', 'Buffalo Ranch', '2024-01-12 18:45:00', '2024-01-12 19:15:00', 4, 21.99, 4)"
+
+Try These Fun Queries! 🚀
+1. Find the speediest delivery drivers:
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q " SELECT d.Name, d.VehicleType, AVG(DATEDIFF(MINUTE, o.OrderTime, o.DeliveryTime)) as AvgDeliveryMinutes FROM Drivers d JOIN Orders o ON d.DriverID = o.DriverID GROUP BY d.Name, d.VehicleType ORDER BY AvgDeliveryMinutes ASC"
+2. Discover the campus favorites:
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q " SELECT PizzaType, COUNT(*) as OrderCount, AVG(Rating) as AvgRating FROM Orders GROUP BY PizzaType ORDER BY OrderCount DESC"
+3. Calculate our delivery champions:
+
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'YourStrongP@ssw0rd' -Q " SELECT d.Name, d.VehicleType, COUNT(o.OrderID) as Deliveries, AVG(o.Rating) as AvgRating, SUM(o.TotalAmount) as TotalSales FROM Drivers d LEFT JOIN Orders o ON d.DriverID = o.DriverID GROUP BY d.Name, d.VehicleType ORDER BY AvgRating DESC"
+Clean Up 🧹
+When you're finished with the lab:
+
+# Stop the container
+docker stop sqlserver
+
+Troubleshooting 🔧
+If you run into issues:
+
+Check if SQL Server is running:
+docker ps
+View SQL Server logs:
+docker logs sqlserver # This shows you detailed logs to help identify any issues
+If you need to reset everything and start fresh:
+docker rm -f sqlserver # Then run the original docker run command from Step 2
+
+How to Submit Part 2 of Your Lab 📧
+Visit https://github.com/
+Click the Octocat icon in the upper left to access your Dashboard
+Find your Module11Lab repository in the Top Repositories list
+Copy your repository's URL from the browser's address bar
+Submit the URL in the submission box below
+
+🎉 Congratulations! You've successfully:Pizza shop
+
+Deployed SQL Server on Linux using Docker.
+Created and managed a database.
+Built a fun pizza delivery tracking system.
+Practiced writing and running SQL queries.
+Learned how to save and document your work.
+Great job completing this lab! 🌟
+
+Due on Apr 3, 2025 10:00 AM
+Available until May 15, 2025 4:00 PM. Access restricted after availability ends.
+
+Hide Rubrics
+Rubric Name: Lab-30 points
+Criteria	
+Professional
+26.1–30.0 points
+Novice
+1.1–26.0 points
+Unsatisfactory
+0.1–1.0 points
+Incomplete
+0–0.0 points
+Criterion Score
+Met Lab Requirements
+You met all of the requirements described in the lab instructions.
+
+You met most of the requirements described in the lab instructions. There were one or two small errors or steps that were missed.
+
+You did not meet most of the requirements described in the lab instructions. There were multiple errors or steps that were missed.
+
+Student did not submit the lab on D2L by the due date listed on the course schedule.
+
+Score of Met Lab Requirements,/ 30
+Total
+Score of Lab-30 points,/ 30
+Overall Score
+Professional
+27 points minimum
+Novice
+26 points minimum
+Unsatisfactory
+1 point minimum
+Incomplete
+0 points minimum
+Submit
+Text submission
+Text Submission
+
+You have new alerts in some of your other accounts

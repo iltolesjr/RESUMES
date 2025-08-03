@@ -1,0 +1,346 @@
+
+
+Database Project
+Design and Implement Your Own Database System
+
+Get started
+Overview
+Welcome to your final project for our SQL Server Database course! Over the next several weeks, you'll design and implement your own database system, putting into practice everything you've learned about SQL Server, database design, and data management. This hands-on project will give you experience designing and implementing your own SQL Server database.
+10
+Quiz
+
+Purpose of the Database Project
+01
+Purpose of the Database Project
+Welcome to the final project of our SQL Server Database course! In this project, you will have the opportunity to apply the knowledge and skills you have acquired throughout the course to design and implement your own database system.
+
+Project Overview:
+
+Duration: The project will span over several weeks, during which you will work on creating a database system.
+Focus: The project aims to provide you with hands-on experience in database creation, optimization, and security implementation.
+Scenario: You will design and build a database system for a real-world scenario chosen by you. This scenario could range from managing inventory, tracking customer orders, organizing a library, managing a healthcare practice, or any other scenario you find interesting.
+Project Objectives:
+
+Application of Knowledge: The project will allow you to apply the SQL Server concepts, database design principles, and data management techniques you have learned in a practical setting.
+Demonstration of Skills: Through this project, you will demonstrate your understanding of SQL Server best practices and concepts while solving real-world business problems.
+Critical Thinking: You will be required to think critically to design a database system that not only meets the requirements of the chosen scenario but also showcases your problem-solving abilities.
+Key Activities:
+
+Database Design: You will be responsible for designing the structure and relationships within the database to ensure efficient data management.
+Implementation: Implementing the designed database system using SQL Server will be a crucial aspect of the project.
+Deliverables:
+
+Database System: At the end of the project, you are expected to present a fully functional database system that addresses the requirements of the chosen real-world scenario.
+Documentation: Along with the database system, you will also be required to provide a project plan and entity-relationship diagram that document your system.
+This project is designed to be an opportunity for you to showcase your knowledge and skills in SQL Server and database management. Get ready to embark on this exciting journey of designing and implementing your own database system! 🚀
+
+
+
+Development Environment
+02
+Development Environment
+To successfully complete your database project, it is imperative to set up a reliable development environment. In this context, your development environment refers to the tools, software, and configurations necessary to efficiently build and test your database.
+
+Deploy SQL Server in GitHub Codespace
+To begin, it is recommended to complete the Module 11 Lab, which will guide you in deploying SQL Server in your GitHub Codespace. Utilizing GitHub Codespace provides you with a cloud-based development environment that allows for seamless collaboration and version control of your project. By deploying SQL Server in this environment, you can ensure accessibility and consistency throughout the development process.
+
+Building and Testing Your Database
+Once SQL Server is successfully deployed in your GitHub Codespace, you can proceed with building and testing your database. Remember to organize your project files effectively within the Codespace environment to maintain a structured approach to development. By testing your database as you build, you can identify and address any potential issues early on, leading to a smoother implementation phase.
+
+Configuring SQL Server Instance
+Before diving into the implementation of your database project, it is crucial to ensure that your SQL Server instance is properly configured. Verify that all necessary settings, such as security configurations, user permissions, and database properties, are correctly in place. A well-configured SQL Server instance will help prevent errors and ensure the reliability and performance of your database.
+
+By establishing a robust development environment through the deployment of SQL Server in GitHub Codespace, efficient building and testing of your database, and thorough configuration of your SQL Server instance, you can set a solid foundation for the successful execution of your database project.
+
+
+
+Brainstorming Session and Project Plan
+03
+Brainstorming Session and Project Plan
+The initial step for this project is participating in an in-class brainstorming session to kick off your project. During this session, you will:
+
+Generate Potential Database Scenarios: Participants will brainstorm and generate potential database scenarios relevant to their projects. This phase serves as the foundation for the database design process.
+
+Receive Feedback: Share your ideas with classmates and the instructor to gather feedback on the feasibility of your project concept. The feedback received will help in refining and enhancing your database solution.
+
+Project Plan
+Following the brainstorming session, the focus shifts to developing a structured project plan that includes a project description with four key components:
+Problem Statement: Clearly articulate the current challenges that your proposed database solution aims to address in 2-3 sentences.
+
+Proposed Database Solution: Concisely outline your proposed database solution in 2-3 sentences, highlighting its key features and benefits.
+
+Types of Data to Track: Provide a list of bullet points outlining the types of data that you plan to track within your database.
+
+Database Administration Concerns: Address key concerns related to database administration, such as scalability, high availability, and security requirements. Consider how your design will accommodate future data growth, ensure availability, and meet security protocols.
+
+Database Design
+The project plan will also describe the database design. Your plan will include an ERD and sample data for your database.
+Entity-Relationship Diagram (ERD): Construct an ERD that showcases all tables and their relationships. Your ERD must demonstrate normalization to at least 2NF (Second Normal Form) and include all primary and foreign key relationships. List all attributes for each entity in the ERD to specify the characteristics of the data being stored.
+
+Sample Data: Include sample data for each table that will be utilized for testing purposes to validate the functionality of your database design.
+
+Project Plan Review
+
+After you develop the rough draft of your project plan, you'll participate in a project plan review in class. During the review, you will have the opportunity to present your project plan to fellow students and receive constructive feedback. This collaborative review process will help you refine and improve your database design before advancing to the implementation phase.
+
+
+
+Database Project - Sprints #1 and #2
+04
+Database Project - Sprints #1 and #2
+In Sprints #1 and #2 of the database project, you will build your database according to specific requirements. The primary focus during these sprints is on the design and implementation of tables, stored procedures, and views that fulfill the given criteria.
+
+Sprint #1
+During Sprint #1, you will create a minimum of eight properly normalized tables, ensuring that they adhere to at least 2NF (Second Normal Form) or higher. Normalization is essential for optimizing the database structure and ensuring data integrity.
+
+You will also implement three stored procedures as follows:
+
+One for Inserting or Updating Data: This stored procedure will handle the insertion or updating of data into the tables.
+One for Retrieving Data in a Meaningful Way: The second stored procedure should focus on retrieving data in a meaningful and organized manner to facilitate data analysis and decision-making.
+One for Deleting Data: The third stored procedure is responsible for deleting data records from the tables when necessary.
+Next, you'll develop two views that serve the following purposes:
+
+Summarize Important Business Metrics: One of the views should provide a summary of key business metrics to give stakeholders a quick overview of the database's performance.
+Join Multiple Tables to Provide Useful Information: The second view should demonstrate the ability to join multiple tables effectively to derive useful information that can aid in decision-making.
+Stand-Up Meeting
+
+During Sprint #1, we'll hold short stand-up meeting in class. At the stand-up meeting, you'll answer three questions:
+
+What task did you complete last?
+What is your next task?
+What are your roadblocks?
+Sprint #2
+During Sprint #2, you'll participate in a review of the rough draft of your database. The database review will give you the opportunity to collaborate with your peers and seek assistance to overcome any challenges. The review session aims to foster a supportive environment for you to share your progress, exchange ideas, and address issues in your database design and implementation.
+
+Overall, Sprints #1 and #2 are crucial stages in the database project, where you will implement and refine your database to meet the specified requirements and ensure the successful completion of the project.
+
+
+
+Retrospective
+05
+Retrospective
+In the final class session of the course, you'll participate in a project retrospective to reflect on the database project. The purpose of the retrospective is to share and discuss your experiences and insights gained during the project.
+
+Retrospective Questions
+During the retrospective session, you will address the following questions:
+
+Evolution of Database Design: How did your database design evolve throughout the project? 
+
+Challenges Encountered: What challenges did you face while working on the project? 
+
+Resolution of Technical Problems: How did you overcome technical issues that arose during the project? 
+
+High Points of the Project: What were the highlights or successes of your project? S
+
+Lessons Learned for Future Projects: What would you do differently if you were to undertake a similar project in the future? 
+
+Group Sharing
+In small groups consisting of 3-4 students, each student will have 15 minutes to:
+
+Demonstrate their Database: Present a walkthrough of their database project, showcasing key features, functionalities, and the structure of the database.
+
+Answer Retrospective Questions: Share their responses to the retrospective questions with group members, elaborating on their experiences, challenges faced, solutions implemented, project highlights, and lessons learned.
+
+Engage in Discussion: Students will actively participate in discussions within their group, asking and answering questions to gain insights from their peers' perspectives and provide feedback on each other's projects.
+
+The project retrospective allows to you to share your project experience and learn about your classmates' experiences as well.
+
+
+
+Tips for Success
+06
+Tips for Success
+Start Early
+Starting the database design process early is critical for success. Designing a database takes time, so ensure you have plenty of time to test and refine your work. This will also give you the opportunity to address any issues or make improvements before it's too late.
+
+Meet All Milestones On Time
+It's important to meet all project milestones on time as they are designed to build upon each other. Falling behind on one milestone can have a domino effect on the rest of the project timeline. Stay organized and prioritize meeting deadlines to ensure a smooth progression of your database project.
+
+Take Advantage of Peer Feedback
+Peer feedback sessions are valuable opportunities to receive constructive criticism and suggestions for improvement. Collaborating with peers can provide fresh perspectives and insights that you may have overlooked. Be open to feedback and use it to enhance the quality of your database design.
+
+Thorough Testing with Sample Data
+Before finalizing your database design, it's essential to thoroughly test it with sample data. Testing allows you to identify any errors, inconsistencies, or inefficiencies in your database structure. By testing early and often, you can make necessary adjustments and ensure that your database functions as intended.
+
+Focus on Building a Working System First
+When developing your database project, prioritize building a working system first and foremost. Focus on ensuring that the basic functionality of your database is reliable and efficient. Once you have a solid foundation, you can then explore adding advanced features or enhancements if time allows.
+
+Implementing these tips will set you on the path to success in your database project. By starting early, meeting milestones, seeking feedback, testing rigorously, and focusing on functionality, you can create a well-designed and functional database system.
+
+
+Academic Integrity
+07
+Academic Integrity
+Academic integrity is a foundational principle that students are expected to uphold in all aspects of their academic work, including database projects. It is essential for students to understand the importance of producing original work and citing any external resources used.
+
+When working on the database project, it is critical to create your own database design and implementation. This means that while you can seek guidance from online resources for help with SQL syntax or best practices, the final project should reflect your own ideas and efforts.
+
+Remember to cite any external resources used in your project documentation. By giving credit to the sources that have influenced your work, you demonstrate integrity and respect for the intellectual property of others.
+
+Remember, academic integrity is not just about following rules; it is about developing your skills, knowledge, and ethical values as a student. By producing original work and giving credit where it is due, you are not only demonstrating your own abilities but also contributing to a culture of honesty and respect within the academic community.
+
+
+
+Getting Help
+08
+Getting Help
+You're encourage to seek help and guidance whenever needed to successfully complete your project. Using different resources and helping your classmates will enrich your learning experience and project outcomes. Here are some strategies to effectively seek help during the course:
+
+Participate Actively in Peer Review Sessions: Engaging in peer review sessions allows you to receive feedback from your classmates, gain new perspectives, and improve your project. Actively participating in these sessions by providing constructive feedback and receiving feedback graciously can help you refine your SQL Server database development skills.
+
+Ask Questions During Class Sessions: Ask questions during class sessions if you need clarification on any topic or aspect of the project instructions. Your instructor is there to support you and ensure your understanding of the course material. Asking questions can clear up any confusion and enable you to progress smoothly with your project.
+
+Attend the Weekly Drop-In Sessions for Technical Help: Take advantage of the weekly drop-in sessions with your instructor. If you encounter challenges or technical difficulties while working on your database project, these sessions provide an opportunity to work with your instructor to address your issues promptly.
+
+Remember that your database project is a culmination of your learning journey in SQL Server database development. Select a scenario that excites you and aligns with your interests to demonstrate your skills effectively. Your enthusiasm and dedication will reflect in your project work, so approach it with confidence and commitment.
+
+Wishing you the best of luck in your database project endeavors! 🍀
+
+
+
+Wrap-up
+Let's review what we have just seen so far
+
+09
+Wrap-up
+Congratulations on embarking on your final project journey in the SQL Server Database course! Put your database skills to the test as you design a real-world system, showcasing your expertise in SQL Server, database design, and data management. This hands-on experience will equip you with the tools to address practical business challenges and demonstrate your proficiency in database creation, optimization, and security. Good luck as you build a database solution tailored to your unique scenario!
+Quiz
+Check your knowledge!
+
+10
+Quiz
+Question
+
+1/10
+
+How many tables do you need to add to your database?
+
+How many tables do you need to add to your database?
+
+5
+
+8
+
+10
+Question
+
+2/10
+
+How many sprints are there in the database project?
+
+How many sprints are there in the database project?
+
+1
+
+2
+
+3
+Question
+
+3/10
+
+How many stored procedures should be implemented in your database?
+
+How many stored procedures should be implemented in your database?
+
+1
+
+2
+
+3
+Question
+
+4/10
+
+What is one of the purposes of the ERD in the database design?
+
+What is one of the purposes of the ERD in the database design?
+
+Showcase advanced features
+
+Display primary and foreign key relationships
+
+Demonstrate project milestones
+Question
+
+5/10
+
+What is the purpose of the project brainstorming?
+
+What is the purpose of the project brainstorming?
+
+Present project plan
+
+Get feedback on potential database scenarios
+
+Test the database system
+Question
+
+6/10
+
+What should be included in the project plan for the database project?
+
+What should be included in the project plan for the database project?
+
+Only a project description
+
+Database design and implementation details
+
+Peer review feedback
+Question
+
+7/10
+
+What is required for academic integrity in the database project?
+
+What is required for academic integrity in the database project?
+
+Copying a classmate's database and project plan
+
+Original work and citation of external resources
+
+Only using online resources
+Question
+
+8/10
+
+What is the main focus of the final project for the SQL Server Database course?
+
+What is the main focus of the final project for the SQL Server Database course?
+
+Building a website to store and update data
+
+Designing and implementing a database system
+
+Creating a mobile app for a database system
+Question
+
+9/10
+
+What is the purpose of the project retrospective?
+
+What is the purpose of the project retrospective?
+
+Share database design and project experience with classmates
+
+Review project milestones with the instructor
+
+Discuss future database projects with classmates
+Question
+
+10/10
+
+What are the four key components of the project description in the project plan?
+
+<div>What are the four key components of the project description in the project plan?</div><div> </div><div> </div><div> </div>
+
+Problem Statement, Proposed Database Solution, Task List, Database Administration Concerns
+
+Problem Statement, Task List, Stand-Up Meeting Agenda, Database Administration Concerns
+
+Problem Statement, Proposed Database Solution, Types of Data to Track, Database Administration Concerns
+Submit
+Conclusion
+Complete quiz to unlock this module
+v0.5.91
+

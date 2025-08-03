@@ -1,0 +1,250 @@
+
+
+Objective
+We'll kickoff the project with an in-class brainstorming session where you will generate potential database scenarios for your projects and get feedback from your classmates and instructor on idea feasibility.
+
+
+Instructions
+Join your classmates in the breakout room.
+Create a list of database project ideas that interest you.
+Copy and paste your list into the textbox at the bottom of this assignment page.
+Project: Brainstorming SessionProject: Brainstorming Session
+ Due last Thu at 10:00 AM
+  Ends Apr 24, 2025 10:00 AM
+Stand-up Meetings - Due10:00 AM
+Stand-up Meetings
+Content Object
+ Due last Thu at 10:00 AM
+  Ends May 15, 2025 4:00 PM
+Module 14 Attendance Quiz - Due11:30 AM
+Module 14 Attendance QuizModule 14 Attendance Quiz
+ Due last Thu at 11:30 AM
+  Ends Apr 17, 2025 11:30 AM
+Database Project - Due4:00 PM
+Database Project
+Content Object
+ Due last Thu at 4:00 PM
+  Ends May 15, 2025 4:00 PM
+Project Plan Review - Due11:30 AM
+Project Plan Review
+Project Plan
+Instructions
+Come Prepared to Share:
+- Bring your draft project plan (even if it's not perfect!)
+- Prepare 2-3 key questions you'd like feedback on
+
+2. During the Review:
+- You'll have 5 minutes to present your project plan and ERD
+- Your classmates will provide constructive feedback
+- Think of it as a friendly feedback session, not a formal presentation
+
+Remember: The goal isn't to have a perfect plan - it's to get valuable feedback that will help make your database design stronger. Whether you're tackling a complex inventory system or a simple event tracker, your peers might spot opportunities you hadn't considered!
+
+Project Plan ReviewProject Plan Review
+ Due April 24 at 11:30 AM
+  Ends May 1, 2025 10:00 AM
+Module 15 Attendance Quiz - Due11:30 AM
+Module 15 Attendance QuizModule 15 Attendance Quiz
+ Due April 24 at 11:30 AM
+  Ends Apr 24, 2025 11:30 AM
+Project Plan - Due10:00 AM
+Project Plan
+
+Project Plan
+Introduction
+Ready to turn your database idea into reality? Think of your project plan as a blueprint for success - it's where you'll map out your solution to a real-world problem using SQL Server's powerful tools. Whether you're designing a system to track your local gym's membership or managing inventory for a bustling coffee shop, you'll start by sketching out your database's anatomy through an ERD (Entity Relationship Diagram). This visual roadmap shows how your tables connect and interact, just like creating a family tree for your data!
+
+
+Instructions
+Choose an idea from the list of database project ideas you generated during the brainstorming session.
+
+Develop a project plan to implement your database. Your project plan should include:
+Project Description (1 page):
+
+A clear problem statement explaining the current challenges (2-3 sentences)
+Your proposed database solution (2-3 sentences)
+The types of data you'll need to track (bullet points)
+A paragraph addressing database administration concerns:
+How will your design ensure scalability as data grows?
+What measures will you implement for high availability?
+How will you address security requirements?
+Database Design:
+
+An Entity-Relationship Diagram (ERD) showing all tables and their relationships
+Must demonstrate normalization to at least 2NF
+Include all primary and foreign key relationships
+Show all attributes for each entity
+The sample data for each table that you'll use for testing
+
+You can choose the tool you use for your ERD, like draw.io or Eraser.io.
+
+ Prepare a rough draft you can share in class for peer review. You don't need to turn in your rough draft of your project plan. Instead, bring your rough draft to class for the project plan review. 
+
+Use the feedback from your classmates to revise your project plan.
+
+Upload the final project plan to this assignment page.
+Project Plan Rubric (76 Points Total)
+Criteria	Professional (100%)	Novice (75%)	Needs Improvement (50%)	Incomplete (0%)
+Project Description (20 pts)	Clear problem statement with comprehensive solution addressing all administration concerns.	Adequate problem statement with solution addressing most administration concerns.	Unclear problem statement with minimal administration considerations.	You did not upload the project plan to the assignment dropbox by the due date listed on the course schedule.
+ERD Design (30 pts)	Complete 2NF ERD with all relationships and attributes properly defined.	ERD mostly in 2NF with minor relationship or attribute issues.	ERD fails 2NF with major relationship or attribute problems.	You did not upload the project plan to the assignment dropbox by the due date listed on the course schedule.
+Relationship Clarity (14 pts)	All relationships logically support business requirements with proper integrity.	Most relationships support requirements with minor integrity issues.	Multiple relationships fail to support requirements.	You did not upload the project plan to the assignment dropbox by the due date listed on the course schedule.
+Data Requirements (12 pts)	Comprehensive sample data demonstrating all relationships and constraints.	Sample data covers most relationships with minor gaps.	Limited sample data with poor relationship demonstration.	You did not upload the project plan to the assignment dropbox by the due date listed on the course schedule.
+Project PlanProject Plan
+ Due May 1 at 10:00 AM
+  Ends May 15, 2025 4:00 PM
+Project Stand-Up Meeting - Due11:30 AM
+Project Stand-Up Meeting
+Students in a stand-up meeting on Zoom
+Instructions
+Come prepared to share your project progress.
+
+Join your classmates in the breakout room.
+
+Take turns quickly answering each of these questions:
+
+What task did you just finish?
+
+What's your next task?
+
+What are your roadblocks?
+
+
+If you finish early, work together to resolve your roadblocks.
+
+Project Stand-Up MeetingProject Stand-Up Meeting
+ Due May 1 at 11:30 AM
+  Ends May 1, 2025 11:30 AM
+Module 16 Attendance Quiz - Due11:30 AM
+Module 16 Attendance QuizModule 16 Attendance Quiz
+ Due May 1 at 11:30 AM
+  Ends May 1, 2025 12:00 PM
+Module 17 Attendance Quiz - Due11:30 AM
+Module 17 Attendance QuizModule 17 Attendance Quiz
+ Due May 8 at 11:30 AM
+  Ends May 8, 2025 11:30 AM
+Project Database - Due10:00 AM
+Project DatabaseSQL Server Dancing
+
+Introduction
+
+Welcome to the hands-on phase of your SQL Server project! Now's the exciting part where you'll bring your database design to life. Let's turn those ERD diagrams into a working database!
+
+Instructions
+Build your database following these requirements using SQL.
+
+Save your SQL statements frequently as you are working so you can turn them in at the end of the project.
+
+Create a minimum of 8 properly normalized tables (2NF or higher).
+
+Populate the tables with your sample data from your project plan.
+
+Implement 3 stored procedures:
+One for inserting or updating data
+One for retrieving data in a meaningful way
+One for deleting data
+
+Design two views that:
+Summarize important business metrics
+Join multiple tables to provide useful information
+
+During Sprint #1, we will hold a short stand-up meeting where each student will share: 
+What they've completed
+What they're working on next
+Any blockers or challenges they're facing
+
+During Sprint #2, we will hold a database project review where you can collaborate with peers and get help with challenges.
+
+After the database review, use the feedback you got from your peers to revise your database.
+
+Copy and paste your SQL statements into the textbox at the bottom of this assignment page and click Submit.
+Remember to submit SQL statements for creating your database, populating it, creating your stored procedures, and creating your views.
+
+
+Project Database Rubric (80 Points Total)
+Criteria	Professional (100%)	Novice (75%)	Needs Improvement (50%)	Incomplete (0%)
+Database Structure (32 pts)	Eight or more properly normalized tables with correct relationships and constraints.	Eight tables with minor normalization or relationship issues.	Fewer than eight tables or major normalization problems.	You did not upload the project database to the assignment dropbox by the due date listed on the course schedule.
+Data Population (16 pts)	Complete sample data matches project plan and demonstrates all relationships.	Sample data present but missing some relationships or scenarios.	Minimal data populated or data inconsistent with plan.	You did not upload the project database to the assignment dropbox by the due date listed on the course schedule.
+Stored Procedures (20 pts)	Three procedures effectively handle insert/update, retrieval, and deletion operations.	Procedures present but contain minor logical errors.	Missing procedures or major functionality issues.	You did not upload the project database to the assignment dropbox by the due date listed on the course schedule.
+Views (12 pts)	Two views effectively summarize metrics and join tables meaningfully.	Views present but provide limited business insight.	Missing views or ineffective table joins.	You did not upload the project database to the assignment dropbox by the due date listed on the course schedule.
+Project DatabaseProject Database
+ Due May 15 at 10:00 AM
+  Ends May 15, 2025 4:00 PM
+Project Retrospective - Due11:30 AM
+Project Retrospective 
+Students making database diagram
+
+Instructions for Preparing for Retrospective
+During the final class session we'll hold a project retrospective.
+During the retrospective, you'll share your database project with your classmates.
+You'll answer the questions below and share your answers with your classmates:
+                    Retrospective Questions
+
+How did your database design evolve during the project?
+What challenges did you encounter during the project?
+How did you resolve technical problems?
+What were the high points of the project?
+What you would do differently next time?
+
+Instructions for Class Session
+You'll break into small groups (3-4 students) to share your retrospectives. Each student will have 15 minutes to:
+
+Demonstrate their database
+Present their answers to the retrospective questions
+Answer questions from group members
+Project RetrospectiveProject Retrospective
+ Due May 15 at 11:30 AM
+  Ends May 15, 2025 11:30 AM
+Module 18 Attendance Quiz - Due11:30 AM
+Module 18 Attendance QuizModule 18 Attendance Quiz
+ Due May 15 at 11:30 AM
+  Ends May 15, 2025 11:30 AM
+Syllabus Quiz - Availability Ends4:00 PM
+Please see the Course Schedule for the instructions and due date for this quiz.
+
+Syllabus QuizSyllabus Quiz
+ Due January 23 at 10:00 AM
+  Ends May 15, 2025 4:00 PM
+Extra Credit: Career Networking Event - Due4:00 PM
+Extra Credit: Career Networking Event 
+InstructionsCareer image of cartoon people on a cloud
+Attend the ITEC Career Day either in-person or online.
+
+If you are unable to attend the ITEC Career Day, then you may attend another event with prior approval from your instructor.
+Note: Attending ITEC career day is the best option, since the employers there specifically want to hire you, a Minneapolis College student!
+
+Choose an event.
+
+Here's a list of places to find IT Career events if you aren't able to come to the ITEC Career Day. You aren't limited to this list - if you find a specific event that you're interested in, let your instructor know so we can add it to the list!
+MnTech: Minnesota Technology Association
+Minnesota Cyber (mncyber.org)
+MinneAnalytics – Twin Cities Big Data, Data Science and Analytics Community
+Minnestar | Connecting the Minnesota Tech Community Since 2006
+Eventbrite (many different tech organizations post events here)
+Meetup (many local technology user groups post events here)
+Stomping the Divide - Blacks In Technology
+Empowering Hispanic Technology Professionals | HITEC (hitecglobal.org)
+Asians in Tech - Supporting Asians in Tech 
+Minnesota Women in Technology
+Somalis in Tech
+
+Email your instructor at mary.lebens@minneapolis.edu to get approval BEFORE you attend.
+
+After the event, write two paragraphs (6-10 full sentences) in the textbox at the bottom of this page. In your writing:
+describe the event you attended
+who you met there, and
+what you learned from the event.
+
+Spell check and grammar check your work to make sure your instructor can understand what you wrote.
+
+Click the submit button to upload your work. 
+
+Give yourself a pat on the back for completing an important step in your career journey! 🙌🙌🏽🙌🏾🙌🏿
+Extra Credit: Career Networking EventExtra Credit: Career Networking Event
+ Due May 15 at 4:00 PM
+  Ends May 15, 2025 4:00 PM
+Extra Credit: Course Survey Confirmation - Due4:00 PM
+Please see the Course Schedule for the instructions and due date for this quiz.
+
+Extra Credit: Course Survey ConfirmationExtra Credit: Course Survey Confirmation
+ Due May 15 at 4:00 PM
+  Starts May 5, 2025 10:00 AMEnds May 15, 2025 4:00 PM
