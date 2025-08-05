@@ -1,0 +1,8 @@
+{
+  "gmail_user": "your-email@gmail.com",
+  "gmail_password": "your-app-password",
+  "github_token": "your-github-token",
+  "github_repo": "username/repository",
+  "check_interval": 300,
+  "processed_emails_file": "processed_emails.json"
+}

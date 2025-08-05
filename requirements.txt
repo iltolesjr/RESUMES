@@ -1,0 +1,17 @@
+# Email Integration Requirements
+# For Gmail to GitHub email forwarding
+
+# Core dependencies
+PyGithub>=1.58.0
+python-dotenv>=1.0.0
+
+# Email handling
+email-validator>=2.0.0
+
+# Optional dependencies for enhanced features
+beautifulsoup4>=4.12.0  # For HTML email parsing
+python-dateutil>=2.8.0  # For better date parsing
+
+# Existing project dependencies (from existing code)
+requests>=2.31.0
+PyYAML>=6.0.1
